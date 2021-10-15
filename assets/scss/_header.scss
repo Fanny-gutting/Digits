@@ -1,0 +1,102 @@
+body, html{
+    margin: 0 auto;
+}
+
+// HEADER //
+header{
+    padding-top: 1em;
+}
+.blue{
+    background-color: #F2F9FF;
+}
+.button_rounded{
+    border-radius: 2.2em;
+}
+
+@include media-breakpoint-up(xs) {
+    body {
+        max-width: 36rem;
+    }
+    .logo_header{
+        width: 3.5rem;
+        height: 1.1rem;
+    }
+    .size_header{
+        width: 60%;
+        min-width: 2em;
+    }
+    .size_contact{
+        width: 45%;
+        min-width: 2em;
+    }
+    button{
+        display: flex;
+        align-self: flex-start;
+        height: 1.9rem;
+    }
+    p {
+        font-size: x-small;
+    }
+    .none_xsmall{
+        display: none;
+    }
+}
+
+@include media-breakpoint-up(sm) {
+    body {
+        max-width: 48rem;
+        min-width: 36rem;
+    }
+    .size_contact{
+        width: 30%;
+        min-width: 2em;
+    }
+    
+}
+
+@include media-breakpoint-up(md) {
+    body {
+        max-width: 62rem;
+        min-width: 48rem;
+    }
+    button{
+        height: 2.3rem;
+    }
+    p {
+        font-size: small;
+    }
+}
+
+@include media-breakpoint-up(lg) {
+    body {
+        max-width: 75rem;
+        min-width: 62rem;
+    }
+    
+    button p b{
+        font-size: 1rem;
+    }
+}
+
+@include media-breakpoint-up(xl) {
+    body {
+        max-width: 100rem;
+        min-width: 75rem;
+    }
+    .logo_header{
+        width: 5rem;
+        height: 1.8rem;
+    }
+    .size_header{
+        width: 45em;
+    }
+    .size_contact{
+        width: 20em;
+    }
+    p {
+        font-size: large;
+    }
+    button{
+        height: 2.5rem;
+    }
+}
